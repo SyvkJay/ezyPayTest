@@ -83,9 +83,7 @@ public class SubsController {
 		LocalDate start = startDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 		LocalDate end = endDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 		
-		for (LocalDate date = start; date.isBefore(end.plusDays(1)); date = date.plusDays(0)) {
-		    // Do your job here with `date`.
-			
+		for (LocalDate date = start; date.isBefore(end.plusDays(1)); date = date.plusDays(0)) {			
 		    System.out.println(date);		    
 		    invoiceList.add(date.format(dtformatter));
 		    date = date.plusDays(addNumOfDays);
