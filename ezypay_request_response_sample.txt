@@ -1,0 +1,18 @@
+url: localhost:8080/ezypaysubscription/add
+method: POST
+
+request sample:
+{"amount":"20", "subscriptionType": "weekly", "dayWeekMonth":"tuesDay", "startDate":"06/02/2018", "endDate":"27/02/2018"}
+
+response sample:
+{
+    "message": "OK",
+    "amount": "20",
+    "subscriptionType": "weekly",
+    "invoiceDateList": [
+        "06/02/2018",
+        "13/02/2018",
+        "20/02/2018",
+        "27/02/2018"
+    ]
+}
